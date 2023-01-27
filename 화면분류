@@ -26,4 +26,4 @@
 3. 대출 실행 - 공동인증서 인증 : lonexecute - X
 3. 대출 실행 - 대출 실행 완료 : lonexecute - Result.js - 확인 버튼 선택 시 진행 상태 화면으로 이동
 3. 대출 실행 - 대출 실패 : lonexecute - Result.js - 현재 주석으로 처리 된 상태
-AgrmInput.js (여신거래약정서) : 기획서에 없는 content
+
