@@ -7,7 +7,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
 <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
 <link rel="stylesheet" href="assets\css\import.css">
-
+<script type="text/javascript">
+    // popup
+    function openPop(e){
+        document.getElementById(e).style.display="block";
+        document.body.style.overflow="hidden";
+    }
+    function closePop(e){
+        document.getElementById(e).style.display="none";
+        document.body.style.overflow="";
+    }
+</script>
 </head>
 <body>
 <!-- Wrapper -->
@@ -69,7 +79,7 @@
                             </div>
 
                             <div class="sele-list type01 radius answer-wrap mar-t10">
-                                <div class="item">
+                                <div class="item" onclick="openPop('bottom01');">
                                     <label class="ui-select">
                                         <select name="sSel" id="sSel1" disabled="">
                                             <option value="">선택불가</option>
@@ -89,7 +99,7 @@
                             </div>
 
                             <div class="sele-list type01 radius answer-wrap mar-t10">
-                                <div class="item">
+                                <div class="item" onclick="openPop('bottom02');">
                                     <label class="ui-select">
                                         <select name="sSel" id="sSel1" disabled="">
                                             <option value="">선택불가</option>
@@ -120,7 +130,114 @@
 
 </div>
 <!-- //wrapper -->
-
+<div id="bottom01" class="bottom-sheet" style="display: none;">
+    <div class="bottom-inner">
+        <div class="bottom-header">
+            <p class="title fc-01">시,도 선택</p>
+            <button type="button" class="btn btn-close" onclick="closePop('bottom01');">
+                <span class="blind">닫기</span>
+            </button>
+        </div>
+        <div class="bottom-content">
+            <div class="select-box">
+                <ul class="select-btn-list col2">
+                    <li>
+                        <button><span>서울특별시</span></button>
+                    </li>
+                    <li>
+                        <button><span>부산광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>대구광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>인천광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>광주광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>대전광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>울산광역시</span></button>
+                    </li>
+                    <li>
+                        <button><span>경기도</span></button>
+                    </li>
+                    <li>
+                        <button><span>강원도</span></button>
+                    </li>
+                    <li>
+                        <button><span>충청북도</span></button>
+                    </li>
+                    <li>
+                        <button><span>충청남도</span></button>
+                    </li>
+                    <li>
+                        <button><span>전라북도</span></button>
+                    </li>
+                    <li>
+                        <button><span>전라남도</span></button>
+                    </li>
+                    <li>
+                        <button><span>경상북도</span></button>
+                    </li>
+                    <li>
+                        <button><span>경상남도</span></button>
+                    </li>
+                    <li>
+                        <button><span>제주특별자치도</span></button>
+                    </li>
+                    <li>
+                        <button><span>세종특별자치시</span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottom02" class="bottom-sheet" style="display: none;">
+    <div class="bottom-inner">
+        <div class="bottom-header">
+            <p class="title fc-01">시,군,구 선택</p>
+            <button type="button" class="btn btn-close" onclick="closePop('bottom02');">
+                <span class="blind">닫기</span>
+            </button>
+        </div>
+        <div class="bottom-content">
+            <div class="select-box">
+                <ul class="select-btn-list col2">
+                    <li><button><span>강남구</span></button></li>
+                    <li><button><span>강동구</span></button></li>
+                    <li><button><span>강북구</span></button></li>
+                    <li><button><span>강서구</span></button></li>
+                    <li><button><span>관악구</span></button></li>
+                    <li><button><span>광진구</span></button></li>
+                    <li><button><span>구로구</span></button></li>
+                    <li><button><span>금천구</span></button></li>
+                    <li><button><span>노원구</span></button></li>
+                    <li><button><span>도봉구</span></button></li>
+                    <li><button><span>동대문구</span></button></li>
+                    <li><button><span>동작구</span></button></li>
+                    <li><button><span>마포구</span></button></li>
+                    <li><button><span>서대문구</span></button></li>
+                    <li><button><span>서초구</span></button></li>
+                    <li><button><span>성동구</span></button></li>
+                    <li><button><span>성북구</span></button></li>
+                    <li><button><span>송파구</span></button></li>
+                    <li><button><span>동작구</span></button></li>
+                    <li><button><span>마포구</span></button></li>
+                    <li><button><span>서대문구</span></button></li>
+                    <li><button><span>서초구</span></button></li>
+                    <li><button><span>성동구</span></button></li>
+                    <li><button><span>성북구</span></button></li>
+                    <li><button><span>송파구</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
