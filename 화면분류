@@ -4,14 +4,13 @@
 0. 메인 - 진행 상태 : Main.js(진행 상태 탭) , common - Progress.js - 보증 심사 완료 시 보증서 내용 확인 화면으로 라우팅 버튼 필요
 1. 고객 등록 - 상품 안내 : guide - Detail.js
 1. 고객 등록 - 사전 준비 안내 : guide - Ready.js
-2. 사전 심사 - 정보조회 약관 동의 : prejudge - Custagree.js - 모두 동의하고 다음눌럿을시 다음 페이지 라우팅
+2. 사전 심사 - 정보조회 약관 동의 : prejudge - Custagree.js
 2. 사전 심사 - 적합성, 적정성 고객정보 확인 : prejudge - Suittest.js - "전문금융 소비자" 선택시 alert 제공, "대출용도 - 시설자금" 선택시 대출 비대상으로 진행 불가 안내 alert 제공
 2. 사전 심사 - 적합성, 적정성 고객정보 결과 : prejudge - SuitResult.js - "SelfCheck" 화면 삭제로 인해 다음 페이지 라우팅 경로 재검토
-2. 사전 심사 - (신보)자가진단 : prejudge - SelfCheck.js => 금일 회의에서 해당 부분 삭제하는 것으로 결정
 2. 사전 심사 - 행정구역 주소지 입력 : prejudge - Datacollect.js
 2. 사전 심사 - 공동인증서 복사 및 등록 안내 : Prejudge - X(페이지 미개발)
 2. 사전 심사 - 자료수집(공동인증서 인증) : Prejudge - X
-2. 사전 심사 - 보증심사자료 작성 : prejudge - Grtinfoinput.js - description에 따라 선택 사항 체크 시에만 진행 가능하도록 유효성 검증 필요/ 대출희망금액 중 1백만 단위 입력 시 "1백만원 단위로 입력 가능합니다." 메시지 출력
+2. 사전 심사 - 보증심사자료 작성 : prejudge - Grtinfoinput.js 주소찾기
 2. 사전 심사 - 서류 전송 확인 : prejudge - DocStatus.js
 3. 대출 실행 - 대출 실행 보증 승인 내역 : Grtjudge - ApprInfo.js - 대출 실행 버튼 클릭 시 대출 약관 동의 화면으로 라우팅
 3. 대출 실행 - 대출 약관 동의 : lonexecute - untactagrm.js - 모두 동의하고 확인 버튼 누를 시 공동인증서 선택 및 인증 화면으로 라우팅
