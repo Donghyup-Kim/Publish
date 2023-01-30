@@ -10,13 +10,26 @@
 <script type="text/javascript">
     // popup
     function openPop(e){
-        document.getElementById(e).style.display="block";
+        document.getElementById(e).classList.add("active");
         document.body.style.overflow="hidden";
     }
     function closePop(e){
-        document.getElementById(e).style.display="none";
+        document.getElementById(e).classList.remove("active");
         document.body.style.overflow="";
     }
+
+    document.addEventListener("click", function(e) {
+            if (
+                event.target.closest(".bottom-sheet") &&
+                !event.target.closest(".bottom-inner")
+            ) {
+                event.target.closest(".bottom-sheet").classList.remove("active");
+                document.body.style.overflow="";
+            }
+        },
+        false
+    )
+
 </script>
 </head>
 <body>
@@ -130,7 +143,7 @@
 
 </div>
 <!-- //wrapper -->
-<div id="bottom01" class="bottom-sheet" style="display: none;">
+<div id="bottom01" class="bottom-sheet">
     <div class="bottom-inner">
         <div class="bottom-header">
             <p class="title fc-01">시,도 선택</p>
@@ -197,7 +210,8 @@
         </div>
     </div>
 </div>
-<div id="bottom02" class="bottom-sheet" style="display: none;">
+
+<div id="bottom02" class="bottom-sheet">
     <div class="bottom-inner">
         <div class="bottom-header">
             <p class="title fc-01">시,군,구 선택</p>
